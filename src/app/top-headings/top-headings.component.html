@@ -1,0 +1,14 @@
+<div class="container">
+  <h2 class="mt-2 mb-2">Top Headlines</h2>
+  <div class="row">
+    <div *ngFor="let topHead of topHeadings" class="col-lg-3 mt-3 mb-3 mainContent">
+      <img src="{{topHead.urlToImage}}" alt="" width="100%" height="200px">
+      <h5 class="mt-2 mb-2">{{topHead.title}}</h5>
+      <!-- <p *ngIf="topHead.content">{{topHead.content}}</p>
+      <p *ngIf="!topHead.content">No Content Available</p> -->
+      <button class="btn btn-primary">
+        <a href="{{topHead.url}}">Read More</a>
+      </button>
+    </div>
+  </div>
+</div>
