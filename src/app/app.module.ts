@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { NewsRoomApiService } from './service/news-room-api.service';
 import { TechnologyComponent } from './technology/technology.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [NewsRoomApiService],
   bootstrap: [AppComponent]
